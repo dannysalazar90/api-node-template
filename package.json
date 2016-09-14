@@ -1,0 +1,67 @@
+{
+  "name": "my-node-api",
+  "version": "0.0.1",
+  "description": "First approach to node API template",
+  "main": "build/index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/*",
+    "lintFix": "eslint --fix src/*",
+    "build": "babel src -d build/",
+    "buildWatch": "babel -w src -d build/",
+    "api": "npm run build && node build/index.js",
+    "apiDocs": "apidoc -i src/ -o public/api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Some github url"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "bluebird-retry": "^0.7.0",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-validation": "^1.0.1",
+    "express-winston": "^2.0.0",
+    "helmet": "^2.1.3",
+    "joi": "^9.0.4",
+    "jsdoc": "^3.4.1",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.3.7",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015-node6": "^0.2.0",
+    "babel-plugin-add-module-exports": "0.1.2",
+    "babel-preset-es2015": "6.5.0",
+    "babel-preset-stage-2": "6.5.0",
+    "eslint": "^2.13.1",
+    "eslint-plugin-node": "^1.5.0",
+    "apidoc": "^0.16.1"
+  },
+  "config": {},
+  "keywords": [],
+  "author": "Danny Salazar",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "apidoc": {
+    "name": "First Node API",
+    "url": "https://localhost:3000/api",
+    "title": "API Documentation"
+  }
+}

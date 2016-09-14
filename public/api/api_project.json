@@ -1,0 +1,1 @@
+{  "name": "First Node API",  "url": "https://localhost:3000/api",  "title": "API Documentation",  "version": "0.0.1",  "description": "First approach to node API template",  "sampleUrl": false,  "apidoc": "0.2.0",  "generator": {    "name": "apidoc",    "time": "2016-09-14T15:03:57.285Z",    "url": "http://apidocjs.com",    "version": "0.16.1"  }}
